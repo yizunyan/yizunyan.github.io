@@ -13,9 +13,9 @@
 
 <nav class="site-nav">
   <div class="wrap">
-    <a class="name" href="index.html">Yizun Yan</a>
+    <a class="name" href="./">Yizun Yan</a>
     <ul>
-      <li><a href="index.html">Home</a></li>
+      <li><a href="./">Home</a></li>
       <li><a href="research.html" aria-current="page">Research</a></li>
       <li><a href="teaching.html">Teaching</a></li>
       <li><a href="extension.html">Extension</a></li>
@@ -100,6 +100,11 @@
     <p class="updated">Last updated October 2026</p>
   </div>
 </footer>
+
+<script>
+  /* On your own computer, "./" opens a folder list, so point Home links at index.html there. */
+  if (location.protocol === "file:") document.querySelectorAll('a[href="./"]').forEach(function (a) { a.href = "index.html"; });
+</script>
 
 </body>
 </html>
